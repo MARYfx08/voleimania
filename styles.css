@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* CORES */
+:root {
+    --roxo: #6B46C1;
+    --amarelo: #FFDD57;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--preto);
+    background-color: var(--branco);
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: var(--roxo);
+    padding: 1rem 0;
+}
+
+.nav-logo {
+    max-width: 120px;
+    height: auto;
+}
+
+.nav-link {
+    color: var(--preto);
+    background-color: var(--branco);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--amarelo);
+    color: var(--preto);
+}
+
+/* INÍCIO */
+.inicio-fundo {
+    background-color: var(--roxo);
+    color: var(--preto);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-inicio {
+    width: 40%;
+    max-width: 250px;
+    height: auto;
+}
+
+.btn-amarelo {
+    background-color: var(--amarelo);
+    color: var(--preto);
+    font-weight: bold;
+}
+
+/* CURIOSIDADES */
+.secao-curiosidades .container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.secao-curiosidades .col-md-5 {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.secao-curiosidades .col-md-7 {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.secao-curiosidades h2 {
+    color: var(--preto);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.img-curiosidade {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+
+.curiosidade-item {
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: transform 0.2s;
+    text-align: left;
+}
+
+.curiosidade-item:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .secao-curiosidades .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-curiosidades .col-md-7,
+    .secao-curiosidades .col-md-
+}

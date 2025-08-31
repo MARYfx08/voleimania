@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vôlei Mania</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/Logo.png" alt="Logo" class="nav-logo">
+            <ul class="nav mt-3">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+
+            <!-- Botões de acessibilidade -->
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- INÍCIO -->
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center flex-wrap rounded-4 p-4">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 fw-bold">Bem-vindo ao Vôlei Mania!</h1>
+                    <p>Descubra curiosidades e imagens incríveis sobre esse esporte emocionante.</p>
+                    <a href="#curiosidades" class="btn btn-amarelo btn-lg fw-semibold">Quero conhecer!</a>
+                </div>
+                <img src="img/volei.jpg" alt="Vôlei destaque" class="img-inicio">
+            </div>
+        </section>
+
+        <!-- CURIOSIDADES -->
+        <section id="curiosidades" class="my-5 pt-6 secao-curiosidades">
+            <div class="container">
+                <div class="col-md-5">
+                    <img src="img/curiosidades.jpg" class="img-curiosidade" alt="Curiosidade">
+                </div>
+                <div class="col-md-7">
+                    <h2>Curiosidades sobre Vôlei</h2>
+                    <div class="curiosidade-item">O vôlei foi criado em 1895 por William G. Morgan nos EUA.</div>
+                    <div class="curiosidade-item">É jogado em quadra de 18m x 9m, com rede a 2,43m (masculino) e 2,24m (feminino).</div>
+                    <div class="curiosidade-item">O Brasil é um dos países mais fortes no vôlei, com medalhas olímpicas e mundiais.</div>
+                    <div class="curiosidade-item">O primeiro campeonato mundial de vôlei aconteceu em 1949 (masculino) e 1952 (feminino).</div>
+                    <div class="curiosidade-item">O vôlei de praia se tornou olímpico em 1996.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center g-4">
+                    <div class="col-md-4"><img src="img/volei2.jpg" class="img-fluid rounded-5" alt=""></div>
+                    <div class="col-md-4"><img src="img/volei3.webp" class="img-fluid rounded-5" alt=""></div>
+                    <div class="col-md-4"><img src="img/volei4.jpg" class="img-fluid rounded-5" alt=""></div>
+                    <div class="col-md-4"><img src="img/volei5.jpg" class="img-fluid rounded-5" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="my-5">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-amarelo btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic bg-roxo text-branco">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Mariana Santos Felix da Silva.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
